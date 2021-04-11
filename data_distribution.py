@@ -1,4 +1,4 @@
-# 請參考原論文中 An Simple Inverse Problem 之章節。
+# 請參考原論文中 A Simple Inverse Problem 之章節。
 # 此程式用來產生該章節中所描述的 training data，
 # 並將其以 2D 的散步圖呈現。
 
@@ -25,7 +25,7 @@ plt.ylabel("x")
 plt.ylim(0.0, 1.0)
 
 plt.scatter(t, x, c=(1,1,1,0), edgecolors=(0,0,0), linewidths=0.5)
-plt.savefig("t-x_sample-1000.png")
+#plt.savefig("t-x_sample-1000.png")
 plt.show()
 
 plt.clf()
@@ -37,5 +37,5 @@ plt.ylabel("t")
 plt.ylim(0.0, 1.0)
 
 plt.scatter(x, t, c=(1,1,1,0), edgecolors=(0,0,0), linewidths=0.5)
-plt.savefig("x-t_sample-1000.png")
+#plt.savefig("x-t_sample-1000.png")
 plt.show()
