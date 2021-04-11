@@ -1,2 +1,2 @@
-# MixtureDensityNetworks
-實作 MixtureDensityNetworks
+# Mixture Density Networks
+實作 Mixture Density Networks
