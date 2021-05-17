@@ -17,8 +17,8 @@ print("Using {}!".format(device))
 num_gaussians = 3
 num_params = 3
 batch_size = 1
-learning_rate = 1e-3
-num_epoch = 1000
+learning_rate = 1e-2
+num_epoch = 100
 
 # Generate data
 t, x = dataGen4InvProb(1000)
