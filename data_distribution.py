@@ -37,5 +37,5 @@ plt.ylabel("t")
 plt.ylim(0.0, 1.0)
 
 plt.scatter(x, t, c=(1,1,1,0), edgecolors=(0,0,0), linewidths=0.5)
-#plt.savefig("x-t_sample-1000.png")
+plt.savefig("x-t_sample-1000.png")
 plt.show()

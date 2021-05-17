@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from utils import dataGen4InvProb
-from simple_model import simpleNN
-from dataset import simpleDataset
+from .utils.utils import dataGen4InvProb
+from .models.nn import SimpleNN
+from .utils.data import SimpleDataset
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
@@ -17,11 +17,11 @@ t, x = dataGen4InvProb(numOfPoints)
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print("Using {}!".format(device))
 
-ds_te = simpleDataset(t, x)
+ds_te = SimpleDataset(t, x)
 dl_te = DataLoader(dataset=ds_te)
 
 # Model
-model = simpleNN().to(device)
+model = SimpleNN().to(device)
 model.load_state_dict(torch.load(path))
 for name, param in model.named_parameters():
     print(f"Layer: {name} | Size: {param.size()} | Values: {param[:]}")
